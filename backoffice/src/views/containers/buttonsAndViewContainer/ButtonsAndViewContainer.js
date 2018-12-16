@@ -29,7 +29,7 @@ class ButtonsAndViewContainer extends Component {
 
   render() {    
     return (
-      <div className="row" style={{marginLeft: 0, marginRight: 0}}>
+      <div className="row" style={{marginLeft: 0, marginRight: 0, minHeight:560}}>
           <div className="col-md-2">
             <div style={{textAlign: "left"}}>
               <ButtonsMenu callBackSelectedButton={this.callBackSelectedButton}/>
