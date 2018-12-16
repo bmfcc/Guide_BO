@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import ButtonsMenu from "../../components/buttonsMenu/ButtonsMenu"
 import ContentContainer from "../contentContainer/ContentContainer"
 import {ButtonsMenuValues} from "../../../global/constants";
+import Clock from 'react-live-clock';
 
 
 class ButtonsAndViewContainer extends Component {
@@ -34,6 +35,13 @@ class ButtonsAndViewContainer extends Component {
             <div style={{textAlign: "left"}}>
               <ButtonsMenu callBackSelectedButton={this.callBackSelectedButton}/>
             </div>
+            <div style={{paddingTop:95+"%", paddingLeft: 6+"%"}}>
+              <h1>
+              <Clock format="HH:mm:ss" ticking={true} interval={1000} />
+              </h1>
+            
+            </div>
+
           </div>
           <div className="col-md-10" style={{textAlign: "center"}}>
           <ContentContainer selectedButtonValue={this.state.selectedButton}/>

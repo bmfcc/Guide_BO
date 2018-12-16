@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import "./ContentContainer.css";
 import Home from "../../components/home/Home"
 import ManageApp from "../../components/manageApp/ManageApp"
 import Statistics from "../../components/statistics/Statistics"
@@ -34,7 +35,7 @@ class ContentContainer extends Component {
 
   render() {    
     return (
-      <div>
+      <div className="content">
        {this.validateSelectedOption(this.props.selectedButtonValue)}        
       </div>
     );
