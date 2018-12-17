@@ -37,11 +37,9 @@ class ButtonsAndViewContainer extends Component {
             </div>
             <div style={{paddingTop:95+"%", paddingLeft: 6+"%"}}>
               <h1>
-              <Clock format="HH:mm:ss" ticking={true} interval={1000} />
+                <Clock format="HH:mm:ss" ticking={true} interval={1000} />
               </h1>
-            
             </div>
-
           </div>
           <div className="col-md-10" style={{textAlign: "center"}}>
           <ContentContainer selectedButtonValue={this.state.selectedButton}/>
