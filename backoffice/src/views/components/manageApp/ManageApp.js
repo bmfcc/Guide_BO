@@ -92,7 +92,7 @@ renderTable(data){
   render() {    
     return (
       <div>
-          <div>
+          <div style={{paddingRight: 20+"%"}}>
           <button className="buttonBO" style={{outline: "none"}}>New</button>
           </div>          
           <div>
